@@ -1,0 +1,353 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <div class="reveal tiny text-center" id="timeFormat" data-reveal>
+      <h2>Time Format</h2>
+      <form>
+        <div class="grid-container">
+          <div class="grid-x grid-padding-x">
+            <div class="medium-8 cell">
+              <label class="text-left">Store Hours</label>
+              <div class="grid-x grid-padding-x">
+                <div class="small-6 cell">
+                  <input type="time">
+                </div>
+                 <div class="small-6 cell to">
+                  <input type="time">
+                </div>
+              </div>
+            </div>
+            <div class="medium-4 cell text-left">
+              <label>24 Hour Format</label>
+              <div class="switch">
+                <input class="switch-input" id="exampleSwitch" type="checkbox" name="exampleSwitch">
+                <label class="switch-paddle" for="exampleSwitch"></label>
+              </div>
+            </div>
+          </div>
+          <div class="grid-x">
+            <div class="cell">
+              <div class="button-group expanded">
+                <a class="button secondary" data-close>Cancel</a>
+                <a class="button">Save</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="reveal tiny text-center" id="scheduleConfirmation" data-reveal>
+      <h2>Publish</h2>
+      <p class="week-schedule">February 17, 2019</p>
+      <div class="button-group expanded">
+        <a class="button secondary" data-close>Cancel</a>
+        <a class="button">Publish</a>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </head>
+  <body class="app left-sub-menu">
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+        <h1>Cold Stone</h1>
+        <div class="logo" style="background: url(https://i.ya-webdesign.com/images/cold-stone-creamery-logo-png-17.png)"></div>
+        <ul class="vertical menu">
+          <li><a href="#" class="home">Dashboard</a></li>
+          <li><a href="published.day.html" class="published">Published Schedules</a></li>
+          <li><a href="scheduler.day.html" class="scheduler">Scheduler</a></li>
+          <li><a href="#" class="store-hours active">Store Hours</a></li>
+          <li><a href="employees.html" class="employees">Employees</a></li>
+        </ul>
+      </div>
+      <div class="off-canvas-content" data-off-canvas-content>
+        <div class="grid-x grid-padding-x">
+          <div class="top-bar">
+            <div class="top-bar-left">
+              <ul class="menu">
+                <li><button class="menu-icon" type="button" data-toggle="offCanvas"></button></li>
+                <li><h1>Store Hours</h1></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="grid-container">
+            <div class="grid-x grid-padding-x">
+              <div class="large-3 cell">
+                <div class="callout dark-bg-form">
+                  <form>
+                    <div class="grid-x grid-padding-x">
+                      <div class="medium-12 cell">
+                        <div class="grid-x">
+                          <div class="small-12 cell">
+                            <h3>Store Hours</h3>
+                          </div>
+                        </div>
+                        <div class="grid-x">
+                          <div class="large-12 cell">
+                            <label>What day would you like to start your work schedule?
+                              <br />
+                              <br />
+                              <select>
+                                <option value="monday">Monday</option>
+                                <option value="tuesday">Tuesday</option>
+                                <option value="wednesday">Wednesday</option>
+                                <option value="thursday">Wednesday</option>
+                                <option value="friday">Friday</option>
+                                <option value="saturday">Saturday</option>
+                                <option value="sunday">Sunday</option>
+                              </select>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="grid-x grid-padding-x">
+                          <div class="medium-12 cell">
+                            <label class="text-left">Monday</label>
+                            <div class="grid-x grid-padding-x">
+                              <div class="small-6 cell">
+                                <input type="time">
+                              </div>
+                               <div class="small-6 cell to">
+                                <input type="time">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="medium-12 cell">
+                            <label class="text-left">Tuesday</label>
+                            <div class="grid-x grid-padding-x">
+                              <div class="small-6 cell">
+                                <input type="time">
+                              </div>
+                               <div class="small-6 cell to">
+                                <input type="time">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="medium-12 cell">
+                            <label class="text-left">Wednesday</label>
+                            <div class="grid-x grid-padding-x">
+                              <div class="small-6 cell">
+                                <input type="time">
+                              </div>
+                               <div class="small-6 cell to">
+                                <input type="time">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="medium-12 cell">
+                            <label class="text-left">Thursday</label>
+                            <div class="grid-x grid-padding-x">
+                              <div class="small-6 cell">
+                                <input type="time">
+                              </div>
+                               <div class="small-6 cell to">
+                                <input type="time">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="medium-12 cell">
+                            <label class="text-left">Friday</label>
+                            <div class="grid-x grid-padding-x">
+                              <div class="small-6 cell">
+                                <input type="time">
+                              </div>
+                               <div class="small-6 cell to">
+                                <input type="time">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="medium-12 cell">
+                            <label class="text-left">Saturday</label>
+                            <div class="grid-x grid-padding-x">
+                              <div class="small-6 cell">
+                                <input type="time">
+                              </div>
+                               <div class="small-6 cell to">
+                                <input type="time">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="medium-12 cell">
+                            <label class="text-left">Sunday</label>
+                            <div class="grid-x grid-padding-x">
+                              <div class="small-6 cell">
+                                <input type="time">
+                              </div>
+                               <div class="small-6 cell to">
+                                <input type="time">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="grid-x">
+                          <div class="large-12 cell">
+                            <a href="#" class="button expanded">Save</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="large-9 cell data-pull">
+                <div class="callout">
+                  <div class="grid-x grid-padding-x">
+                    <div class="medium-12 cell">
+                      <h3>Custom</h3>
+                      <form>
+                        <div class="grid-x grid-padding-x">
+                          <div class="large-5 cell">
+                            <div class="grid-x grid-padding-x">
+                              <div class="small-5 cell">
+                                <div class="grid-x">
+                                  <div class="large-12 cell">
+                                    <label>Date</label>
+                                  </div>
+                                  <div class="large-12 cell">
+                                    <input type="date">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="small-7 cell">
+                                <div class="grid-x">
+                                  <div class="large-12 cell">
+                                    <label>Note</label>
+                                  </div>
+                                  <div class="large-12 cell">
+                                    <input type="text">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="large-4 cell">
+                            <div class="grid-x grid-padding-x">
+                              <div class="small-6 cell">
+                                <div class="grid-x">
+                                  <div class="large-12 cell">
+                                    <label>Open</label>
+                                  </div>
+                                  <div class="large-12 cell">
+                                    <input type="date">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="small-6 cell to">
+                                <div class="grid-x">
+                                  <div class="large-12 cell">
+                                    <label>Close</label>
+                                  </div>
+                                  <div class="large-12 cell">
+                                    <input type="date">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="large-3 cell">
+                            <div class="grid-x grid-padding-x">
+                              <div class="small-3 cell">
+                                <div class="grid-x">
+                                  <div class="large-12 cell">
+                                    <label>Repeat</label>
+                                  </div>
+                                  <div class="large-12 cell">
+                                    <input id="checkbox1" type="checkbox"><label for="checkbox1"></label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="small-6 cell">
+                                <a href="#" class="button expanded">Save</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list">
+                    <div class="grid-x custom-dates">
+                      <table class="unstriped">
+                        <thead>
+                          <tr>
+                            <th>Date</th>
+                            <th>Note</th>
+                            <th>Open</th>
+                            <th>Close</th>
+                            <th class="text-center">Repeat</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Wednesday, December 28, 2019</td>
+                            <td>Christmas Day</td>
+                            <td>9A</td>
+                            <td>5P</td>
+                            <td class="repeat"></td>
+                            <td>
+                              <div class="button-group tiny float-right">
+                                <a class="button secondary">Edit</a>
+                                <a class="button alert">Delete</a>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="large-12 cell">
+                        <nav aria-label="Paginationt">
+                          <ul class="pagination">
+                            <li class="pagination-previous disabled">Previous <span class="show-for-sr">page</span></li>
+                            <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+                            <li><a href="#" aria-label="Page 2">2</a></li>
+                            <li><a href="#" aria-label="Page 3">3</a></li>
+                            <li><a href="#" aria-label="Page 4">4</a></li>
+                            <li class="ellipsis" aria-hidden="true"></li>
+                            <li><a href="#" aria-label="Page 12">12</a></li>
+                            <li><a href="#" aria-label="Page 13">13</a></li>
+                            <li class="pagination-next"><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+      $('.staffRow').change(function(){
+        $('tr').removeClass('checked');
+        if($(this).is(':checked')){
+          $(this).closest('tr').addClass('checked');
+          var radioValue = $("input[name='staff']:checked").val();
+          $("#search_name").val(radioValue);
+        }
+      });
+    
+    });
+  </script>
+  </body>
+</html>

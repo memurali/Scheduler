@@ -1,0 +1,239 @@
+body { background: #F2F5F9; }
+body label { font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+
+@media screen and (max-width: 39.9375em) {
+	body { 
+		display: none;
+	}
+}
+.button-group a:first-child { margin-right: 1rem; }
+.button-group a:nth-child(2) { margin-right: 1rem; }
+
+.pagination .current { background: #ED6D2D; border-radius: 3px; }
+.slider .slider-handle { background: #ED6D2D; height: 1.7rem; width: 1.7rem; border-radius: 50%; border: 3px solid white; box-shadow: 0 0.07143rem 0.21429rem 0 rgba(0,0,0,0.12); }
+.slider .slider-fill { background: #ED6D2D; }
+.switch .switch-paddle { border-radius: 3rem; }
+.switch .switch-paddle:after { border-radius: 3rem; box-shadow: 0 0.07143rem 0.21429rem 0 rgba(0,0,0,0.12); }
+
+.sign-in { margin-top: 3rem; }
+.sign-in .callout { padding: 0px; border-radius: 3rem !important; }
+.sign-in .intro { position: relative; padding: 3rem 5rem !important; border-radius: 3rem 0 0 3rem; }
+.sign-in .intro .profile-image-upload { background-size: cover; width: 100px; height: 100px; margin: 5rem auto 1rem; }
+.sign-in .intro .button { margin-bottom: 10rem; }
+.sign-in .info { background: #1B395A; padding: 3rem 5rem; }
+.sign-in .info h2 { color: white; }
+.sign-in .info p { color: white; }
+.sign-in .info label { color: white; }
+.dark-bg-form { background: #1B395A !important; border: none; border-radius: 0px !important; }
+.dark-bg-form h3 { color: white; }
+.dark-bg-form label { color: white; }
+.dark-bg-form input { background: rgba(255, 255, 255, 0.1); color: white; border: none; border-radius: 3px !important; }
+.dark-bg-form input:focus { background: rgba(255, 255, 255, 0.1); }
+.dark-bg-form select { background-color: rgba(255, 255, 255, 0.1); color: white; border: none; border-radius: 3px; }
+.dark-bg-form textarea { background: rgba(255, 255, 255, 0.1); color: white; border: none; border-radius: 3px !important; }
+.dark-bg-form small { color: white; }
+.dark-bg-form svg { display: block; position: absolute; bottom: 0px; left: 16px; width: 100%; border-bottom: 30px solid #1B395A;  }
+
+@media screen and (max-width: 39.9375em) {
+	body { 
+		display: block;
+	}
+}
+
+@media screen and (max-width: 63.9375em) {
+	.sign-in .intro .profile-image-upload { margin-top: 3rem; }
+	.sign-in svg { border-bottom: 0px; left: 0px; bottom: -78px; }
+	.sign-in .info { padding: 3rem; margin-top: 3rem; }
+}
+
+.menu-icon { margin-top: -7px; }
+.menu-icon::after {
+    background: white !important;
+    -webkit-box-shadow: 0 7px 0 white, 0 14px 0 white !important;
+    box-shadow: 0 7px 0 white, 0 14px 0 white;
+}
+
+.reveal h2 { font-size: 1.3rem; font-weight: bold; }
+.reveal h3 { font-size: 1.2rem; }
+.reveal .to { position: relative; }
+.reveal .to:before { content: "to"; position: absolute; font-size: 10px; font-weight: bold; left: -5px; top: 11px; }
+.reveal .week-schedule:after { display: block; content: " Schedule"; }
+.reveal .button-group { margin-bottom: 0px; }
+
+.reveal .profile-image-upload { background-color: #eee; background-size: cover; margin-bottom: -3px; width: 100%; height: 110px; }
+
+.top-bar { padding: 0px; width: 100%; }
+.top-bar .menu { background: #1B395A; }
+.top-bar .menu li { color: white; padding: 10px 15px; border-right: 1px solid rgba(255, 255, 255, 0.1); }
+.top-bar h1 { font-size: 1rem; margin: 0px; }
+.top-bar .top-bar-right label { font-size: 11px; }
+.app .grid-container { max-width: 100rem; margin-top: 1rem; }
+
+#scheduler { height: 100vh; overflow: hidden; }
+
+.off-canvas { background: #1B395A; padding-top: 1rem; }
+.off-canvas h1 { color: white; font-size: 1rem; text-align: center; }
+.off-canvas .logo { background-color: white !important; background-position: center !important; background-size: cover !important; padding: 1rem; margin: 0px auto 3rem; width: 70px; height: 70px; border-radius: 50%; }
+.off-canvas .menu a { color: white; font-size: 13px; font-weight: bold; text-transform: uppercase; padding-top: 1.3rem; padding-bottom: 1.3rem; padding-left: 3rem; border-left: 3px solid #1B395A; }
+.off-canvas .menu a:hover { border-left: 3px solid #ED6D2D; }
+.off-canvas .menu .active { background: rgba(255, 255, 255, 0.1); border-left: 3px solid #ED6D2D; }
+.off-canvas .menu .home { background: url(../assets/icons/home.png) no-repeat 1rem center; background-size: 17px; }
+.off-canvas .menu .published { background: url(../assets/icons/calendar.png) no-repeat 1rem center; background-size: 17px; }
+.off-canvas .menu .scheduler { background: url(../assets/icons/pencil2.png) no-repeat 1rem center; background-size: 17px; }
+.off-canvas .menu .store-hours { background: url(../assets/icons/time.png) no-repeat 1rem center; background-size: 17px; }
+.off-canvas .menu .employees { background: url(../assets/icons/employees.png) no-repeat 1rem center; background-size: 17px; }
+
+.content .callout { background: #FBFDFF; border-color: #eee; border-radius: 3px; }
+
+.content .calendar-search .button { background: #1779ba url(../assets/icons/calendar.png) no-repeat center; background-size: 20px; min-width: 50px !important; border-radius: 0px 3px 3px 0; }
+.app.left-sub-menu .grid-container { margin-top: 0px; padding-left: 0px; }
+.app.left-sub-menu .grid-container .large-3 { padding-right: 0px; }
+.app.left-sub-menu .grid-container .data-pull { margin-top: 1rem; }
+
+.app.right-sub-menu .grid-container { margin-top: 0px; padding-right: 0px; }
+.app.right-sub-menu .grid-container .large-3 { padding-left: 0px; }
+.app.right-sub-menu .grid-container .data-pull { margin-top: 1rem; }
+
+@media screen and (min-width: 40em) {
+	.app.right-sub-menu .grid-container .large-9 { margin-top: 1rem; }
+}
+
+#dashboard .schedule-quick-view h3:before { content: "This Week's Schedule"; display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+#dashboard .schedule-quick-view .schedule { margin-top: 1rem; margin-bottom: 0px; }
+#dashboard .history .callout { margin-right: 0px; height: 100vh; border: none; }
+#dashboard .history .button { background-color: #ED6D2D; }
+#dashboard .history label { color: white; margin-top: 1rem; border-bottom: 1px solid #eee; }
+#dashboard .history .cell:first-child label { margin-top: 0px; }
+#dashboard .history ul { margin: 0px; }
+#dashboard .history a { font-size: 13px; }
+#dashboard .history .label { background: #132940; font-size: 10px; font-weight: bold; padding-top: 3px; padding-bottom: 4px; margin-top: 5px; border-radius: 3px; }
+
+#employees .grid-container { padding-right: 0px; }
+#employees .grid-container .add-staff:after { content: "+"; margin-left: 1rem; }
+#employees .add-custom-fields .accordion-title { background: #1B395A !important; border: none; }
+#employees .add-custom-fields .accordion-title:hover { background: #1B395A !important; }
+#employees .add-custom-fields .accordion-title:before { color: white; font-size: 1.3rem; font-weight: bold; margin-top: -13px; }
+#employees .add-custom-fields h3 { color: white; font-size: 1.3rem; margin-bottom: 0px; }
+#employees .add-custom-fields .accordion-content { background: #1B395A !important; border: none; border-radius: 0px; }
+#employees .add-custom-fields .accordion-content .button { margin-bottom: 0px; }
+#employees .custom-fields { background: #1B395A; border: none; border-radius: 0px; }
+#employees .custom-fields .custom-field-order { background: none; padding: 0px; border: none; }
+#employees .custom-fields .custom-field-order .callout { background: white url(../assets/icons/moveable.png) no-repeat 11px center; background-size: 19px; padding-left: 2.5rem; }
+#employees .custom-fields .custom-field-order .callout label { color: black; }
+#employees .custom-fields .custom-field-order .callout:nth-child(-n+3){ background-color: #eee; border: 2px solid #ED6D2D; }
+#employees .custom-fields .custom-field-order .edit-custom-field { display: block; background: url(../assets/icons/pencil.png) no-repeat center; background-size: 17px; position: absolute; top: 13px; right: 10px; width: 30px; height: 30px; opacity: 0.2; }
+
+.content .scheduler-menu { margin-top: 1rem;  }
+.content .scheduler-menu .button { min-width: 50px !important; }
+.content .search-staff { margin-bottom: 0px; }
+.content .search-staff .button { background: #132940 url(https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2012/png/iconmonstr-magnifier-2.png&r=255&g=255&b=255) no-repeat center; background-size: 15px; width: 3rem; border-radius: 0px 3px 3px 0; }
+.content .availability h2:before { content: "Availability"; display: block; font-size: 11px; font-weight: bold; text-transform: uppercase; }
+.content .availability h2 { font-size: 1rem; }
+.content .slider { margin-top: 1rem; margin-bottom: 0px; }
+.content h2 { font-size: 1.5rem; }
+.content .callout h3 { font-size: 1.3rem; }
+.content .callout .button { min-width: 100px; }
+.content .date span { position: relative; top: -5px; margin-left: 1rem; }
+.content .switch-24 { margin-right: 1rem;  }
+.content .scheduling-menu li { background: #F8F8F8; font-size: 15px; border-right: 1px solid #eee; }
+.content .scheduling-menu li:last-child { border-right: none; }
+.content .cal-menu li { background: #F8F8F8; font-size: 15px; border-right: 1px solid #eee; }
+.content .cal-menu li:last-child { border-right: none; }
+.content .cal-menu select { border: none; box-shadow: none; }
+.content .cal-menu .previous { background: url(https://cdns.iconmonstr.com/wp-content/assets/preview/2012/240/iconmonstr-arrow-24.png) no-repeat center; background-size: 13px;  padding-top: 29px; transform: rotate(180deg) }
+.content .cal-menu .calendar { background: url(https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2012/png/iconmonstr-calendar-4.png&r=0&g=0&b=0) no-repeat center; background-size: 20px;  padding-top: 25px; }
+.content .cal-menu .next { background: url(https://cdns.iconmonstr.com/wp-content/assets/preview/2012/240/iconmonstr-arrow-24.png) no-repeat center; background-size: 13px;  padding-top: 29px; }
+.content .cal-menu .print { background: url(https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2012/png/iconmonstr-printer-2.png&r=0&g=0&b=0) no-repeat center; background-size: 20px;  padding-top: 25px; }
+
+@media screen and (max-width: 63.9375em) {
+	.content .switch-24 { display: none; }
+}
+
+.content table th { font-size: 13px !important; text-align: left; }
+.content table .text-center { text-align: center !important; }
+.content table .button-group { margin-bottom: 0px; }
+.content .schedule { margin-top: 1rem; margin-bottom: 5rem; }
+#scheduler .table-header { position: relative; margin-bottom: -90px; z-index: 1;  }
+/*#scheduler .table-header .cell { text-align: center; }*/
+#scheduler .table-header th:last-child { padding-left: 0px; padding-right: 0px;  }
+#scheduler .schedule {  height:calc(100vh - 365px); overflow-y: scroll; }
+#scheduler .schedule thead { opacity: 0;}
+.content .schedule table { padding-left: 0px; }
+.content .schedule table th { padding-left: 0px; padding-right: 0px; }
+.content .schedule a { display: block; color: black; font-weight: bold; width: 100%; height: 100%; }
+.content .schedule .large-auto { margin: 0px auto !important; width: auto !important; }
+.content .schedule .staff-name { text-align: left; }
+.content .staff-name select { margin: 0px; border: none; box-shadow: none; }
+.content .schedule .fixed-table { width: 100%; height: 100px; overflow: auto; }
+.content .schedule th { text-align: center; }
+.content .schedule .staff {  text-align: left; }
+.content .schedule .staff.checked { border-left: 5px solid #1779ba; }
+.content td { position: relative; font-size: 14px; }
+.content .staff .image-profile { position: absolute; width: 30px; right: 7px; top: 15px; border-radius: 50%; }
+.content .schedule .staff input { float: left; margin-right: 1rem; margin-top: 1rem; }
+.content .schedule .staff td:first-child { border-right: 1px solid #eee; }
+.content .schedule .staff .total-hours { display: block; font-size: 13px; }
+.content .schedule .staff .total-hours:before { content: ""; display: inline-block; background: url(https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2012/png/iconmonstr-time-3.png&r=0&g=0&b=0) no-repeat center 1px; background-size: 9px; margin-right: 5px; width: 10px; height: 10px;}
+.content .schedule .staff .total-hours:after { content: " hours"; }
+.content .schedule .staff .availability { padding: 0px; }
+.content .schedule .staff .availability .available { position: relative; background: #eee; text-align: center; padding-top: 23px; width: 100%; height: 63.3px; border-right: 1px solid #ddd; }
+.content .schedule .staff .availability .available .availability-time { position: absolute; font-size: 11px; font-weight: bold; top: 2px; left: 5px;  }
+.content .schedule .staff .availability .available .availability-time .start:after { content: ""; display: inline-block; background: url(https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2012/png/iconmonstr-arrow-19.png&r=0&g=0&b=0) no-repeat center 5px; background-size: 8px; width: 17px; height: 13px; }
+.content .schedule .staff .availability .mode-24 .available { position: inherit; }
+
+.content .schedule .staff .availability .scheduled { display: block; background: green; color: white; font-size: 11px; font-weight: bold; padding-left: 7px !important; padding-top: 1px; padding-right: 7px !important; height: 17px; }
+.content .schedule .staff .availability .scheduled.start-15 { text-align: left; float: right; padding-left: 3px; width: 75%; border-radius:  10px 0 0 10px; }
+.content .schedule .staff .availability .scheduled.start-30 { text-align: left; float: right; padding-left: 3px; width: 50%; border-radius:  10px 0 0 10px; }
+.content .schedule .staff .availability .scheduled.start-45 { text-align: left; float: right; padding-left: 3px; width: 25%; border-radius:  10px 0 0 10px; }
+.content .schedule .staff .availability .scheduled.end-15 { text-align: right; padding-right: 3px; width: 25%; border-radius:  0 10px 10px 0; }
+.content .schedule .staff .availability .scheduled.end-30 { text-align: right; padding-right: 3px; width: 50%; border-radius:  0 10px 10px 0; }
+.content .schedule .staff .availability .scheduled.end-45 { text-align: right; padding-right: 3px; width: 75%; border-radius:  0 10px 10px 0; }
+.content .schedule .staff .availability.not-available { background-color: #dddddd;
+background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23666666' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E"); }
+.content .schedule .past { opacity: 0.5; }
+.content .schedule .day-note { display: block; font-size: 11px; font-weight: normal; }
+.content .schedule .table-footer { position: fixed; bottom: -15px; left: 0px; width: 100%; }
+.content .schedule .table-footer p { margin: 0px; }
+.content .schedule .table-footer p span { font-size: 13px; }
+.content .schedule .table-footer .published-date:before { content: "Last Published: "; }
+.content .schedule .table-footer .button { display: inline-block; color: white; padding: 7px 0; margin: 0 0 0 1rem; width: 100px }
+
+/* Medium Down */
+@media screen and (max-width: 63.9375em) {
+	.content .schedule .staff .image-profile { display: none; }
+	.content .large-auto { font-size: 11px; }
+}
+
+.content .schedule.week th { font-weight: normal;  }
+.content .schedule.week .today { font-weight: bold; }
+.content .schedule.week .working { background: green !important; color: white !important; font-size: 13px; text-align: center; }
+.content .schedule.week .working a { color: white !important; }
+.content .schedule.week .working a .split { display: block; border-top: 1px solid white; }
+.content .schedule.week .available { background: #ddd; color: black !important; font-size: 13px; text-align: center; }
+.content .schedule.week .off { background: red; }
+
+.content .data-pull .button { margin-top: 17px; }
+.content .data-pull p { font-size: 1.5rem; font-weight: bold; }
+.content .data-pull .projected-sales { background: white url(../assets/icons/graph.png) no-repeat right bottom -17px; background-size: 78px; }
+.content .data-pull .projected-sales .input-group-label { border: none; }
+.content .data-pull .projected-sales .input-group-field { background: rgba(255, 255, 255, 0.7); border-radius: 0 3px 3px 0; }
+.content .data-pull .projected-sales .input-group-field:disabled { background: rgba(230, 230, 230, 0.7); border: none; border-radius: 0 3px 3px 0; box-shadow: none; }
+.content .data-pull .data .cell { border-right: 1px solid #eee; }
+.content .data-pull .data .cell:last-child { border-right: none; }
+.content .data-pull .data .cell p { color: #1B395A; }
+.content .data-pull .data .hours p:before { content: ""; display: inline-block; background: url(../assets/icons/hours.png) no-repeat center 13px; background-size: 17px; width: 30px; height: 30px; }
+.content .data-pull .data .hours p:after { content: " hours"; font-size: 13px; font-weight: normal; }
+.content .data-pull .data .hours p span { margin-left: 3px; }
+.content .data-pull .data .labor-cost p:before { content: ""; display: inline-block; background: url(../assets/icons/gear.png) no-repeat center 13px; background-size: 17px; width: 30px; height: 30px; }
+.content .data-pull .data .labor-cost p:after { content: " labor cost"; font-size: 13px; font-weight: normal; }
+.content .data-pull .data .labor-percentage p:before { content: ""; display: inline-block; background: url(../assets/icons/graph2.png) no-repeat center 13px; background-size: 17px; width: 30px; height: 30px; }
+.content .data-pull .data .labor-percentage p:after { content: " %"; font-size: 13px; font-weight: normal; }
+.content .data-pull .last-year p:after { content: " yearly"; font-size: 13px; font-weight: normal; }
+.content .data-pull .employees p:before { content: ""; display: inline-block; background: url(https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2012/png/iconmonstr-user-2.png&r=0&g=0&b=0) no-repeat center 12px; background-size: 15px; width: 30px; height: 30px; }
+
+.content .list th { color: #1B395A; font-size: 11px !important; text-transform: uppercase; letter-spacing: 1px; text-align: left; }
+.content .list td .address-info { display: block; font-size: 13px; }
+.content .list td .city:after { content: ", "; }
+.content .list td .state:after { content: " "; }
+.content .list td .more { display: block; background: url(../assets/icons/dots.png) no-repeat right center; background-size: 20px; width: 100%; height: 30px; }
+.content .list .repeat { background: url(../assets/icons/repeat.png) no-repeat center; background-size: 17px; }
